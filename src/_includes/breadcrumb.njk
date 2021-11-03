@@ -1,0 +1,21 @@
+<nav aria-label="Breadcrumb">
+  <ol>
+    <li>
+      <a href="{{ chrisf.rootUrl }}/" class="thick-underline">Home</a>
+    </li>
+    {# for posts #}
+    {% set regExp = r/\/posts\//g %}
+    {% if regExp.test(page.url) %}
+      {% if tags and tags | checkIfPost %}
+        <li>
+          <a href="{{ chrisf.rootUrl }}/posts/" class="thick-underline">Posts</a>
+        </li>
+        <li>
+          {{ title }}
+        </li>
+      {% else %}
+        <li>Posts</li>
+      {% endif %}
+    {% endif %}    
+  </ol>
+</nav>

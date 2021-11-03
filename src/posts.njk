@@ -1,0 +1,15 @@
+---
+pagination:
+  data: collections.posts
+  size: 8
+  alias: posts
+  reverse: true
+title: Posts
+layout: layouts/base.njk
+permalink: /posts/{%if pagination.pageNumber > 0 %}{{ pagination.pageNumber | addOne }}/{% endif %}
+---
+
+<h1>Posts</h1>
+{%- for post in posts %}
+  {% include "postcard.njk" %}
+{%- endfor %}

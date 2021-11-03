@@ -1,0 +1,15 @@
+{
+  "title": "Chris Ferguson's Weblog",
+  "url": "https://chris-f.com",
+  "language": "en",
+  "description": "A collection of posts written by Chris Ferguson.",
+  "feed": {
+    "subtitle": "A collection of posts written by Chris Ferguson.",
+    "filename": "feed.xml",
+    "path": "/feed/feed.xml",
+    "id": "https://chris-f.com/"
+  },
+  "author": {
+    "name": "Chris Ferguson"
+  }
+}

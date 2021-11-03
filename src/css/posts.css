@@ -1,0 +1,52 @@
+main.tmpl-post {
+  --quote-border: 2px solid var(--mid-gray);
+  font-size: var(--article-font-size);
+  max-width: var(--article-width);
+  line-height: var(--article-line-height);
+}
+
+time {
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+ol {
+  padding-left: 1.5em;
+}
+
+ol > li {
+  margin-bottom: 1em;
+}
+
+blockquote {
+  border-left: var(--quote-border);
+  margin: 2em 1em 2em 0.5em;
+  padding: 0 1.4em;
+  font-size: 1.2em;
+  font-style: italic;
+}
+
+video{
+  width: 100%;
+  max-width: 100%;
+  aspect-ratio: 3 / 2;
+}
+
+nav[aria-label="Post Navigation"]{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 2em 0;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+
+
+/* breakpoints */
+@media (min-width: 600px){
+  blockquote {
+    margin: 2em 2em 2em 1em;
+    padding: 0 1.4em;
+  }
+}

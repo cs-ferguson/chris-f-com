@@ -1,0 +1,5 @@
+<div class="postlist">
+{% for post in postlist | reverse %}
+  {% include "postcard.njk" %}
+{% endfor %}
+</div>

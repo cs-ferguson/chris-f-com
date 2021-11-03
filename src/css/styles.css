@@ -1,0 +1,257 @@
+:root {
+  /* typography */
+  --base-font-size: 16px;
+  --article-font-size: 1.2rem;
+  --article-line-height: 1.7;
+  --font-family-main: 'Cardo', serif;
+  --font-family-headers: 'Work Sans', sans-serif;
+  --front-page-header-size: 6rem;
+  --post-card-font-size: 0.9rem;
+  /* layout */
+  --site-padding: 1rem;
+  --content-width: 38rem;
+  --wide-content-width: 48rem;
+  --article-width: 30em;
+  /* colors */
+  --base-font-color: #000;
+  --base-bg-color: #fff;
+  --off-black: #303035;
+  --mid-gray: #909095;
+  --absolute-zero: #0046b8;
+  --violet-crayola: #883677;
+  /* misc color scheme */
+  --breadcrumb-bg: var(--base-font-color);
+  --breadcrumb-text: var(--base-bg-color);
+  --link: var(--absolute-zero);
+  --link-visited: var(--violet-crayola);
+}
+
+/* @media (prefers-color-scheme: dark){
+  :root{
+    --link: cyan;
+    --link-visited: violet;
+  }
+
+  html, body {
+    background: #151820;
+    color: #fff;
+  }
+} */
+
+html {
+  font-family: var(--font-family-main);
+  font-size: var(--base-font-size);
+  margin: 0;
+}
+
+body{
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+  scroll-behavior: smooth;
+  margin: 0;
+}
+
+body > *,
+body > * > * {
+  box-sizing: border-box;
+}
+
+header .brand{
+  text-transform: uppercase;
+  padding: 0 3px;
+  font-family: var(--font-family-headers);
+  background: var(--breadcrumb-bg);
+  color: var(--breadcrumb-text);
+  letter-spacing: +1px;
+  line-height: 1;
+}
+
+header .brand>a{
+  display: inline-block;
+  font-size: 14px;
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+  border: 3px double #fff;
+  padding: 2px 8px;
+  margin: 3px 0;
+}
+
+a{
+  color: var(--link);
+}
+a:visited{
+  color: var(--link-visited);
+}
+
+h1, 
+h2, 
+h3{
+  font-family: var(--font-family-headers);
+  font-weight: 700;
+  line-height: 1.1;
+}
+
+h1{
+  font-size: 3em;
+}
+
+h2{
+  font-size: 2em;
+  margin-top: 1.75em;
+}
+
+h3{
+  font-size: 1.6em;
+  margin-top: 1.75em;
+}
+
+main{
+  margin: auto;
+  max-width: var(--content-width);
+  padding: 0 var(--site-padding);
+  padding-bottom: 3rem;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+figure{
+  margin: 2em 0;
+}
+
+figcaption {
+  text-align: center;
+  font-size: 0.9em;
+  color: var(--off-black);
+  margin: 0.5em 0;
+}
+
+nav[aria-label="Breadcrumb"]{
+  font-size: 1.2rem;;
+  padding: 1em var(--site-padding);
+}
+
+nav[aria-label="Breadcrumb"] ol{
+  list-style-type: none;
+  display: flex;
+  padding: 0;
+  margin: 0;
+}
+
+nav[aria-label="Breadcrumb"] ol > li:before{
+  content: "\21D2";
+  display: inline-block;
+  width: 2.5em;
+  text-align: center;
+}
+
+nav[aria-label="Breadcrumb"] ol > li:first-child:before{
+  content: "";
+  display: none;
+}
+
+nav[aria-label="Breadcrumb"] ol > li:last-child{
+  display: none;
+}
+
+nav[aria-label="Breadcrumb"] a:visited{
+  color: inherit;
+}
+
+.post-card{
+  margin-bottom: 3em;
+  font-size: var(--post-card-font-size);
+}
+
+.post-card:last-child{
+  margin-bottom: 0;
+}
+
+.post-card h3{
+  margin: 0;
+}
+
+.post-card h3>a{
+  color: inherit;
+  text-decoration: none;
+}
+
+.post-card .description {
+  margin-top: 1em;
+}
+
+.post-card .read-link{
+  font-size: 1rem;
+}
+
+.post-card .read-link > span {
+  transition: 0.3s padding cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+
+.post-card .read-link:hover > span {
+  padding-left: 0.6em;
+}
+
+a.thick-underline {
+  color: var(--base-font-color);
+  text-decoration: none;
+  border-bottom: 1px solid var(--base-font-color);
+  position: relative;
+  padding-bottom : 0.2em;
+}
+
+a.thick-underline::after{
+  content: "";
+  background: var(--base-font-color);
+  height: 3px;
+  display: inline-block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  transition: 0.2s width ease-in-out;
+}
+
+a.thick-underline:hover:after{
+  width: 100%;
+}
+
+a.icon-link{
+  display: inline-flex;
+  align-items: bottom;
+  justify-content: flex-start;
+  flex-wrap: nowrap;
+  gap: 0.5em;
+}
+
+a.icon-link > svg{
+  width: 1.5em;
+  height: 1.5em;
+}
+
+a.icon-link > svg path{
+  fill: inherit
+}
+
+
+/* breakpoints */
+@media (min-width: 960px) {
+  :root {
+    /* typography */
+    --base-font-size: 20px;
+  }
+
+  nav[aria-label="Breadcrumb"]{
+    font-size: inherit;
+  }
+
+  nav[aria-label="Breadcrumb"] ol > li:last-child{
+    display: inline-block;
+  }
+}
+

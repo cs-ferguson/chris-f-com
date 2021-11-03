@@ -1,0 +1,39 @@
+
+main.tmpl-home{
+  max-width: var(--wide-content-width);
+}
+
+main.tmpl-home h1::first-line{
+  line-height: 0.5;
+}
+
+
+/* breakpoints */
+@media (min-width: 960px) {
+  main.tmpl-home{
+    display: grid;
+    grid-template-columns: calc(var(--front-page-header-size) * 2.75) 1fr;
+    gap: 1em 3em;
+  }
+
+  main.tmpl-home section{
+    grid-column: 2;
+  }
+
+  main.tmpl-home h1{
+    font-size: var(--front-page-header-size);
+    writing-mode: vertical-rl;
+    max-height: 5.5em;
+    vertical-align: bottom;
+    transform: rotate(180deg);
+    line-height: 1;
+    text-align-last: center;
+    margin: 0;
+    position: sticky;
+    top: 0;
+  }
+
+  main.tmpl-home h1{
+    text-align-last: center;
+  }
+}

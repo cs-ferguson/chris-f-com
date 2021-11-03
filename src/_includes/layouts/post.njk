@@ -1,0 +1,14 @@
+---
+layout: layouts/base.njk
+templateClass: tmpl-post
+---
+<h1>{{title}}</h1>
+<time datetime="{{ date }}">{{date | presentDate }}</time>
+{{ content | safe }}
+
+{% set previousPost = collections.posts | getPreviousCollectionItem(page) %}
+{% set nextPost = collections.posts | getNextCollectionItem(page) %}
+<nav aria-label="Post Navigation">
+{% if previousPost %}<a href="{{ previousPost.url }}" aria-label="Read the previous post: {{ previousPost.title }}" class="thick-underline">&lt; Previous Post</a>{% endif %}
+{% if nextPost %}<a href="{{ nextPost.url }}" aria-label="Read the next post: {{ nextPost.title }}" class="thick-underline">Next Post &gt;</a>{% endif %}
+</nav>

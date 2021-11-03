@@ -1,0 +1,35 @@
+{
+  "name": "chris-f-com",
+  "version": "1.0.0",
+  "description": "chris-f personal website",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/cs-ferguson/chris-f-com.git"
+  },
+  "author": {
+    "name": "Chris Ferguson",
+    "email": "christopher.stanley.ferguson@gmail.com",
+    "url": "https://chris-f.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/cs-ferguson/chris-f-com/issues"
+  },
+  "homepage": "https://github.com/cs-ferguson/chris-f-com#readme",
+  "scripts": {
+    "build": "ELEVENTY_ENV=production npx @11ty/eleventy && node_modules/clean-css-cli/bin/cleancss --batch --batch-suffix '' build/css/*.css",
+    "serve": "ELEVENTY_ENV=develop npx @11ty/eleventy --serve",
+    "serve:prod": "ELEVENTY_ENV=production npx @11ty/eleventy --serve"
+  },
+  "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^1.0.0",
+    "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "clean-css": "^5.2.2",
+    "clean-css-cli": "^5.4.2",
+    "dayjs": "^1.10.7",
+    "linkedom": "^0.13.0",
+    "markdown-it": "^12.2.0",
+    "markdown-it-image-figures": "^2.0.0"
+  }
+}
