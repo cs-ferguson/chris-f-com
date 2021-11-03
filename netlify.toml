@@ -1,4 +1,3 @@
 [build]
-  base = "src"
   publish = "build"
-  command = "npm run build"
+  command = "npm install && npm run build"
