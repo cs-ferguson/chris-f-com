@@ -119,6 +119,8 @@ module.exports = (config) => {
   return {
     dir: {
       input: "src",
+      includes: "src/_includes",
+      data: "src/_data",
       output: "build",
     },
   };
