@@ -62,6 +62,7 @@ module.exports = (config) => {
   config.addPassthroughCopy("src/img");
   config.addPassthroughCopy("src/css");
   config.addPassthroughCopy("src/video");
+  config.addPassthroughCopy("_redirects");
 
   //filters
   config.addFilter("checkIfPost", (tags) =>
