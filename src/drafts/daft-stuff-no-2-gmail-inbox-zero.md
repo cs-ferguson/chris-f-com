@@ -11,7 +11,7 @@ Google has killed a lot of things in its time:
 
 Google+
 
-{That one Jonny was on about}
+Google Wave (which Microsoft seem to have rebuilt)
 
 Jeeves from Ask Jeeves
 

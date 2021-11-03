@@ -18,6 +18,7 @@
   "homepage": "https://github.com/cs-ferguson/chris-f-com#readme",
   "scripts": {
     "build": "ELEVENTY_ENV=production npx @11ty/eleventy && node_modules/clean-css-cli/bin/cleancss --batch --batch-suffix '' build/css/*.css",
+    "build:dev": "ELEVENTY_ENV=develop npx @11ty/eleventy && node_modules/clean-css-cli/bin/cleancss --batch --batch-suffix '' build/css/*.css",
     "serve": "ELEVENTY_ENV=develop npx @11ty/eleventy --serve",
     "serve:prod": "ELEVENTY_ENV=production npx @11ty/eleventy --serve"
   },

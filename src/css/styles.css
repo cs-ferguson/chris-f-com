@@ -1,3 +1,30 @@
+@font-face {
+  font-family: 'Cardo';
+  src: url('../fonts/Cardo-Regular.woff2') format('woff2'), url('../fonts/Cardo-Regular.woff') format('woff');
+  font-weight: 400;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cardo';
+  src: url('../fonts/Cardo-Italic.woff2') format('woff2'), url('../fonts/Cardo-Italic.woff') format('woff');
+  font-weight: 400;
+  font-style: italic;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Cardo';
+  src: url('../fonts/Cardo-Bold.woff2') format('woff2'), url('../fonts/Cardo-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Work Sans';
+  src: url('../fonts/WorkSans-Bold.woff2') format('woff2'), url('../fonts/WorkSans-Bold.woff') format('woff');
+  font-weight: 700;
+  font-display: swap;
+}
+
+
 :root {
   /* typography */
   --base-font-size: 16px;

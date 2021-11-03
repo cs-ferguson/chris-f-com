@@ -3,17 +3,16 @@ main.tmpl-home{
   max-width: var(--wide-content-width);
 }
 
-main.tmpl-home h1::first-line{
-  line-height: 0.5;
-}
-
-
 /* breakpoints */
 @media (min-width: 960px) {
   main.tmpl-home{
     display: grid;
     grid-template-columns: calc(var(--front-page-header-size) * 2.75) 1fr;
     gap: 1em 3em;
+  }
+
+  main.tmpl-home h1::first-line{
+    line-height: 0.5;
   }
 
   main.tmpl-home section{

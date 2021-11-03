@@ -12,6 +12,11 @@ module.exports = (config) => {
   //plugins
   config.addPlugin(pluginRss);
 
+  //modify ignores - available in v1.0!!
+  // if (process.env.ELEVENTY_ENV == "production") {
+  //   config.ignores.delete("src/drafts");
+  // }
+
   //image transform
   config.addTransform("transform", async (content, outputPath) => {
     const options = {
@@ -62,6 +67,7 @@ module.exports = (config) => {
   config.addPassthroughCopy("src/img");
   config.addPassthroughCopy("src/css");
   config.addPassthroughCopy("src/video");
+  config.addPassthroughCopy("src/fonts");
   config.addPassthroughCopy("_redirects");
 
   //filters
@@ -116,6 +122,7 @@ module.exports = (config) => {
     ui: false,
     ghostMode: false,
   });
+
   // 11ty defaults
   return {
     dir: {
