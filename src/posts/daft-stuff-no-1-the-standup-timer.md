@@ -13,6 +13,8 @@ Aside: The future belongs to the Citizen Developers, I should write about that.
 
 Now and again, I like to turn my attention to coding things that remove a bit of friction from my day-to-day, and I'll be covering this miscellany in this series.
 
+![A screenshot of the Stand-up Timer](https://cfergo.s3.eu-west-1.amazonaws.com/sut-screenshot.png "The Stand-up Timer...")
+
 We start with the Stand-up Timer. Everyone knows what the "Stand-up" is. I'm pretty sure it pre-dates the Scrum framework, but Scrum made it famous. Even though it's called a "Scrum" in Scrum and not a "Stand-up". Still with me?
 
 It's another name for "everyone getting together as a team every day and forcing each other to talk to each other frequently so we can work as an actual team and help each other". I know what you're thinking - if everyone talks, every day, won't that take ages? 
