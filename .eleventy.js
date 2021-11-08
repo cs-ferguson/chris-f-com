@@ -83,6 +83,9 @@ module.exports = (config) => {
   config.addFilter("presentDate", (dateText) =>
     dayjs(dateText).format("D MMMM, YYYY")
   );
+  config.addFilter("isoDate", (dateText) =>
+    dayjs(dateText).format("YYYY-MM-DD")
+  );
   config.addFilter("addOne", (number) => parseInt(number, 10) + 1);
 
   //set markdown library and add figures and captions
