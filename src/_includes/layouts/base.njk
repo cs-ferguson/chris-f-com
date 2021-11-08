@@ -4,7 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>{{ title }}</title>
-    <meta name="description" content="{{ metadata.description }}">
+    <meta name="description" content="{{ description or metadata.description }}">
+    <meta property="og:title" content="{{ title }}" />
+    {%if permalink %}
+      <meta property="og:url" content="https://chris-f.com{{ permalink }}" />
+    {% endif %}
+    {%if featuredImage %}
+      <meta property="og:image" content="{{ chrisf.rootUrl }}{{ featuredImage }}" />
+    {% endif %}
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
  
     <link href="/css/styles.css" rel="stylesheet" type="text/css">
@@ -20,6 +27,8 @@
     {%if tags and tags | checkIfPost %}
       <link href="/css/posts.css" rel="stylesheet" type="text/css">
     {% endif %}
+
+    {% include "schema.njk" %}
   </head>
   <body>
     <header>

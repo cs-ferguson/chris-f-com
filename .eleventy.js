@@ -1,5 +1,6 @@
 const dayjs = require("dayjs");
 const fs = require("fs");
+const path = require("path");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
 const { parseHTML } = require("linkedom");
@@ -41,6 +42,11 @@ module.exports = (config) => {
             formats: ["webp"],
             urlPath: "/img/",
             outputDir: "./src/img/",
+            filenameFormat: function (id, src, width, format, options) {
+              const extension = path.extname(src);
+              const name = path.basename(src, extension);
+              return `${name}-${width}w.${format}`;
+            },
           });
           let highdata = metadata.webp[metadata.webp.length - 1];
           let lowdata = metadata.webp[0];

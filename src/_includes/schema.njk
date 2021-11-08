@@ -1,0 +1,21 @@
+ {# check for posts #}
+{% set regExp = r/\/posts\//g %}
+{% if regExp.test(page.url) %}
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BlogPosting",
+      "headline": "{{ title }}",
+      "image": [
+        "https://chris-f.com{{ featuredImage }}",
+        ],
+      "datePublished": {{ date }},
+      "dateModified": {{ dateModified }},
+      "author": [{
+          "@type": "Person",
+          "name": "Chris Ferguson",
+          "url": "https://chris-f.com/"
+        }]
+    }
+  </script>
+{% endif %}

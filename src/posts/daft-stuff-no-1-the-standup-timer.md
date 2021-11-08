@@ -2,10 +2,12 @@
 title: "Daft Stuff I've Built: No. 1, The Stand-up Timer"
 description: "Now and again, I like to turn my attention to coding things that remove a bit of friction from my day-to-day, and I'll be covering this miscellany in this series. Starting with the Stand-up Timer"
 date: 2021-10-19
+dateModified: 2021-11-05
 tags:
   - daft-stuff
 layout: layouts/post.njk
 permalink: /posts/daft-stuff-ive-built-1-standup-timer/
+featuredImage: /img/sut-screenshot-480w.webp
 ---
 I'm no Software Engineer. On a scale of "I'm still using Internet Explorer" to [King-HTML-Decoding-Hacker](https://heavy.com/news/gov-mike-parson-html-source-code-decoded-ssn/)  I sit just a bit after the Citizen Developer level. I know enough code just to get things working how I want, but not enough to build them properly.
 
