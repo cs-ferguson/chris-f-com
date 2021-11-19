@@ -1,6 +1,6 @@
 ---
 title: "Daft Stuff I've Built: No. 1, The Stand-up Timer"
-description: "Now and again, I like to turn my attention to coding things that remove a bit of friction from my day-to-day, and I'll be covering this miscellany in this series. Starting with the Stand-up Timer"
+description: "Now and again, I like to turn my attention to coding things that remove a bit of friction from my day-to-day, and I'll be covering this miscellany in this series. Starting with the Stand-up Timer."
 date: 2021-10-19
 dateModified: 2021-11-17
 tags:
