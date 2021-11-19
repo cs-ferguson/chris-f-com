@@ -2,7 +2,7 @@
 title: "Daft Stuff I've Built: No. 1, The Stand-up Timer"
 description: "Now and again, I like to turn my attention to coding things that remove a bit of friction from my day-to-day, and I'll be covering this miscellany in this series. Starting with the Stand-up Timer"
 date: 2021-10-19
-dateModified: 2021-11-05
+dateModified: 2021-11-17
 tags:
   - daft-stuff
 layout: layouts/post.njk
@@ -69,6 +69,6 @@ Other notable features:
 - Keyboard operation to stop you fumbling for the mouse/trackpad mid-Stand-up
 - Video introductions
 
-You can find the repo here if you're interested, and try it out yourself at [standuptimer.chris-f.com](https://standuptimer.chris-f.com). I haven't touched it in some time. You'll find this is a recurring theme in this series of posts.
+You can find the repo here if you're interested, and try it out yourself at [standuptimer.chris-f.com](https://standuptimer.chris-f.com).
 
 Next up in this series: The Gmail Inbox Zero Chrome Extension.
