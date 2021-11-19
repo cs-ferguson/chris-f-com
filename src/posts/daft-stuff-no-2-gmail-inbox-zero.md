@@ -1,6 +1,6 @@
 ---
 title: "Daft Stuff I've Built: No. 2, Gmail Inbox Zero Indicator"
-description: "Pining for Google Inbox to return, led me down a path of Chrome Extensions and Gmails crazy markup"
+description: "Pining for Google Inbox to return, led me down a path of Chrome Extensions and Gmail's crazy markup..."
 date: 2021-11-19
 dateModified: 2021-11-19
 tags:
