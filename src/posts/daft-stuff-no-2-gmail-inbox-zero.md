@@ -37,7 +37,7 @@ One of my favourite features however, was that was you got a nice picture of a s
 
 ## Inbox Zero
 
-Inbox Zero for those of you uneducated in the ways of the workflow is when you clear your Inbox - usually this is achieved by snoozing or deleting all of your emails. This feature never made it across from Inbox to the Gmail web app - although bafflingly made it into GMail's mobile app.
+Inbox Zero for those of you uneducated in the ways of the workflow is when you clear your Inbox - usually this is achieved by snoozing or deleting all of your emails. The feature where you are rewarded with a twee picture when you hit zero never made it across from Inbox to the Gmail web app - although bafflingly made it into GMail's mobile app.
 
 Anyway I built a Chrome Extension that does it for me...
 
