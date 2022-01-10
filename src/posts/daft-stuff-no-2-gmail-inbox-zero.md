@@ -4,6 +4,7 @@ description: "Pining for Google Inbox to return, led me down a path of Chrome Ex
 date: 2021-11-19
 dateModified: 2021-11-19
 tags:
+  - featured
   - daft-stuff
 layout: layouts/post.njk
 permalink: /posts/daft-stuff-ive-built-2-gmail-inbox-zero-extension/
