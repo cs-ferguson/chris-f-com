@@ -4,6 +4,7 @@ description: "It's time to start tackling my deep-seeded fear of being judged by
 date: 2022-01-04
 dateModified: 2022-01-04
 tags:
+  - featured
   - diary
   - self
 layout: layouts/post.njk

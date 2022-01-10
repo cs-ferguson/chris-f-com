@@ -4,6 +4,7 @@ description: "Now and again, I like to turn my attention to coding things that r
 date: 2021-10-19
 dateModified: 2021-11-17
 tags:
+  - featured
   - daft-stuff
 layout: layouts/post.njk
 permalink: /posts/daft-stuff-ive-built-1-standup-timer/

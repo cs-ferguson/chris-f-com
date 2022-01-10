@@ -4,6 +4,7 @@ description: "Training 100m alone is fine, until you need to practice sprint sta
 date: 2021-11-22
 dateModified: 2021-11-22
 tags:
+  - featured
   - daft-stuff
 layout: layouts/post.njk
 permalink: /posts/daft-stuff-ive-built-3-sprint-start-app/
