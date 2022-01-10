@@ -7,7 +7,6 @@ tags:
   - weeknotes
 layout: layouts/post.njk
 permalink: /posts/weeknotes-2022-1/
-featuredImage: /img/secret-squirrel-480w.webp
 ---
 - Week 1 of trying to “Work in the open” a bit more. I found out that spending the time to produce an asynchronous update can be beneficial - although asynchronous questions generated more interaction than just awareness raising posts (e.g. what I’m working on). Allowing people to come to an issue when they have time, and particualrly for technical issues - giving them time to look up and formulate an answer - leads to an increase in the value of responses.
 - Despite being quite simple, I’ve decided to view the way we build sites with central components as a service, to see what insights this brings. I’m hoping my Questionnaire delivers some insights from the team.
