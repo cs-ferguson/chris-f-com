@@ -273,6 +273,12 @@ a.icon-link > svg path{
   fill: inherit
 }
 
+.postlist + a {
+  font-weight: 700;
+  margin-top: 2em;
+  display: inline-block;
+}
+
 
 /* breakpoints */
 @media (min-width: 960px) {

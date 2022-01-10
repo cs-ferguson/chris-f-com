@@ -6,8 +6,9 @@ templateClass: tmpl-home
 <h1>Chris Ferguson's Weblog</h1>
 <section>
   <h2>Featured Posts</h2>
-  {% set postlist = collections.posts %}
+  {% set postlist = collections.featured %}
   {% include "postlist.njk" %}
+  <a href="/posts" class="thick-underline">All posts...</a>
 </section>
 <section>
   <h2>Background</h2>
