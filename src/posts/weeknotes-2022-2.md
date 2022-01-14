@@ -7,7 +7,7 @@ tags:
   - weeknotes
 layout: layouts/post.njk
 permalink: /posts/weeknotes-2022-2/
-featuredImage: /img/secret-squirrel-480w.webp
+featuredImage: /img/alien-sketch-480w.webp
 ---
 - It was a great feeling to install one of our “Core Blocks” via Composer and just having it work. It reminded me that we have actually been making progress towards the “two-week build”.
 - An otherwise disjointed week at work, but I feel like we’re getting some direction on how we are going to approach Keyboard navigation and Screen reader testing.
