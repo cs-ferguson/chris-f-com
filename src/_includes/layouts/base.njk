@@ -7,25 +7,29 @@
     <meta name="description" content="{{ description or metadata.description }}">
     <meta property="og:title" content="{{ title }}" />
     {%if permalink %}
-      <meta property="og:url" content="https://chris-f.com{{ permalink }}" />
+    <meta property="og:url" content="https://chris-f.com{{ permalink }}" />
     {% endif %}
     {%if featuredImage %}
-      <meta property="og:image" content="{{ chrisf.rootUrl }}{{ featuredImage }}" />
+    <meta property="og:image" content="{{ chrisf.rootUrl }}{{ featuredImage }}" />
+    {% else %}
+    <meta property="og:image" content="{{ chrisf.rootUrl }}/img/featured-image-default.webp" />
     {% endif %}
+    <meta property="og:site_name" content="Chris Ferguson's Weblog" />
+    <meta property="og:type" content="article" />
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
  
     <link href="/css/styles.css" rel="stylesheet" type="text/css">
     <!--homepage stylesheet -->
     {%if templateClass == "tmpl-home" %}
-      <link href="/css/homepage.css" rel="stylesheet" type="text/css">
+    <link href="/css/homepage.css" rel="stylesheet" type="text/css">
     {% endif %}
     <!--404 stylesheet -->
     {%if templateClass == "tmpl-404" %}
-      <link href="/css/four-oh-four.css" rel="stylesheet" type="text/css">
+    <link href="/css/four-oh-four.css" rel="stylesheet" type="text/css">
     {% endif %}
     <!--post stylesheet -->
     {%if tags and tags | checkIfPost %}
-      <link href="/css/posts.css" rel="stylesheet" type="text/css">
+    <link href="/css/posts.css" rel="stylesheet" type="text/css">
     {% endif %}
 
     {% include "schema.njk" %}
