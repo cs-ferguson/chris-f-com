@@ -11,10 +11,6 @@ main.tmpl-home{
     gap: 1em 3em;
   }
 
-  main.tmpl-home h1::first-line{
-    line-height: 0.5;
-  }
-
   main.tmpl-home section{
     grid-column: 2;
   }
@@ -25,14 +21,32 @@ main.tmpl-home{
     max-height: 5.5em;
     vertical-align: bottom;
     transform: rotate(180deg);
-    line-height: 1;
+    line-height: calc(var(--front-page-header-size) * 1);
     text-align-last: center;
     margin: 0;
     position: sticky;
     top: 0;
-  }
-
-  main.tmpl-home h1{
     text-align-last: center;
   }
+
+  main.tmpl-home h1::first-line {
+    line-height: 0.5;
+  }
+
+  /* main.tmpl-home h1:before{
+    content: "\00a0 \A Ferguson's \A Weblog";
+    color: var(--absolute-zero);
+    position: absolute;
+    top: 0;
+    right: -3rem;
+    transition: all 1s ease-in-out;
+    clip-path: polygon(69% 0%, 0% 66%, 69% 100%, -15% 100%, -15% 0%);
+  }
+
+  main.tmpl-home h1:hover:before{
+    content: "\00a0 \A Ferguson's \A Weblog";
+    color: var(--violet-crayola);
+    clip-path: polygon(120% 0%, 0% 66%, 69% 100%, -35% 100%, -15% 0%);
+  } */
+
 }

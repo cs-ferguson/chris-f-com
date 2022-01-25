@@ -54,6 +54,8 @@
   --mid-gray: #909095;
   --absolute-zero: #0046b8;
   --violet-crayola: #883677;
+  --another-purple: #bb1878;
+  --burnt-orange: #cb6a00;
   /* misc color scheme */
   --breadcrumb-bg: var(--base-font-color);
   --breadcrumb-text: var(--base-bg-color);
@@ -93,22 +95,19 @@ body > * > * {
 }
 
 header .brand{
-  text-transform: uppercase;
   padding: 0 3px;
   font-family: var(--font-family-headers);
   background: var(--breadcrumb-bg);
   color: var(--breadcrumb-text);
-  letter-spacing: +1px;
   line-height: 1;
 }
 
 header .brand>a{
   display: inline-block;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 1;
   text-decoration: none;
   color: inherit;
-  border: 3px double #fff;
   padding: 2px 8px;
   margin: 3px 0;
 }
