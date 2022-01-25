@@ -3,12 +3,17 @@ permalink: "{{ metadata.feed.path }}"
 eleventyExcludeFromCollections: true
 ---
 <?xml version="1.0" encoding="utf-8"?>
-<feed xmlns="http://www.w3.org/2005/Atom">
+<rss xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:webfeeds="http://webfeeds.org/rss/1.0" version="2.0">
+<channel>
 	<title>{{ metadata.title }}</title>
 	<subtitle>{{ metadata.feed.subtitle }}</subtitle>
 	{% set absoluteUrl %}{{ metadata.feed.path | url | absoluteUrl(metadata.url) }}{% endset %}
 	<link href="{{ absoluteUrl }}" rel="self"/>
 	<link href="{{ metadata.url }}"/>
+	<webfeeds:cover image="{{ metadata.url }}/img/featured-image-default.jpg" />
+	<webfeeds:icon>{{ metadata.url }}/img/chris-f-favicon.svg</webfeeds:icon>
+	<webfeeds:icon>{{ metadata.url }}/img/chris-ferguson-full-text-icon.svg</webfeeds:icon>
+	<webfeeds:accentColor>0046b8</webfeeds:accentColor>
 	<updated>{{ collections.posts | rssLastUpdatedDate }}</updated>
 	<id>{{ metadata.feed.id }}</id>
 	<author>
@@ -24,4 +29,5 @@ eleventyExcludeFromCollections: true
 		<content type="html">{{ post.templateContent | htmlToAbsoluteUrls(absolutePostUrl) }}</content>
 	</entry>
 	{%- endfor %}
-</feed>
+</channel>
+</rss>
