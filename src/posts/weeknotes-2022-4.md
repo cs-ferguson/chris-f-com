@@ -11,13 +11,13 @@ permalink: /posts/weeknotes-2022-4/
 
 ## Thoughts
 
-> We should engage in more formats that put our ideas out there on their own for criticism.
-
 Is the nature of our business holding back our recruitment? We’re targeting steady growth and identified a major obstacle to this being our ability to recruit experienced engineers into the organisation.
 
 A hypothesis we share as a team is that Engineers are put off by the prospect of working with WordPress - WordPress development has a reputation as being a matter of throwing together some styles and PHP templates*. Or that is our opinion of what is being said. I’m currently formulating ways to test this opinion/hypothesis on our “target market” so to speak. I think it’s survey time again! I’ll see if I can get some budget for incentives.
 
 *This is certainly not the case for our organisation - WordPress focussed as we are, we face some of the most engaging problems and challenges, and formulate some of the most interesting solutions I have seen in my time in the industry. 
+
+> We should engage in more formats that put our ideas out there on their own for criticism.
 
 Why do I always have my best ideas outside of group sessions? To be fair, I think everyone has their best ideas outside of group sessions - yet we persist with shouting at a white board and engaging in groupthink. I suppose it’s what everyone feels more comfortable doing.
 
