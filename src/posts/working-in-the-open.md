@@ -1,6 +1,6 @@
 ---
 title: "I'm going to start working in the open"
-description: "It's time to start tackling my deep-seeded fear of being judged by working in the open. I just need to understand what it means, and how to do it."
+description: "It's time to start tackling my deep-seated fear of being judged by working in the open. I just need to understand what it means, and how to do it."
 date: 2022-01-04
 dateModified: 2022-01-04
 tags:
