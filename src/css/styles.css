@@ -46,7 +46,7 @@
   --site-padding: 1rem;
   --content-width: 38rem;
   --wide-content-width: 48rem;
-  --article-width: 30em;
+  --article-width: 34rem;
   /* colors */
   --base-font-color: #000;
   --base-bg-color: #fff;
@@ -95,7 +95,7 @@ body > * > * {
 }
 
 header .brand{
-  padding: 0 3px;
+  padding: 0 var(--site-padding);
   font-family: var(--font-family-headers);
   background: var(--breadcrumb-bg);
   color: var(--breadcrumb-text);
@@ -108,8 +108,17 @@ header .brand>a{
   line-height: 1;
   text-decoration: none;
   color: inherit;
-  padding: 2px 8px;
+  padding: 2px 0;
   margin: 3px 0;
+}
+
+footer{
+  padding: calc(var(--site-padding) * 2);
+  display: flex;
+  justify-content:flex-end;
+}
+footer > a {
+  margin: 0 calc(var(--site-padding) * 0.5);
 }
 
 a{
@@ -143,7 +152,7 @@ h3{
 
 main{
   margin: auto;
-  max-width: var(--content-width);
+  max-width: var(--article-width);
   padding: 0 var(--site-padding);
   padding-bottom: 3rem;
 }
