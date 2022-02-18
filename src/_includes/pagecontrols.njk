@@ -1,0 +1,27 @@
+{# Pagination Controls #}
+
+{%if pagination.pageLinks.length > 1 %}
+<nav aria-label="Page Navigation">
+{# previous page button #}
+{% if pagination.previousPageLink %}
+  {% if pagination.pageNumber === 1 %}
+  <a href="/{{ pagination.alias }}" aria-label="Go to the previous page" class="thick-underline">&lt; Previous Page</a>
+  {% else %}
+  <a href="{{ pagination.previousPageHref | url }}" aria-label="Go to the previous page" class="thick-underline">&lt; Previous Page</a>
+  {% endif %}
+{% else %}
+<a role="link" aria-disabled="true">Previous Page</a>
+{% endif %}
+
+
+
+{# next page button #}
+{% if pagination.nextPageLink %}
+<a href="{{ pagination.nextPageHref | url }}" aria-label="Go to the next page" class="thick-underline">Next Page &gt;</a>
+{% else %}
+<a role="link" aria-disabled="true">Next Page</a>
+{% endif %}
+</nav>
+Page {{ pagination.pageNumber | addOne }} of {{ pagination.pageLinks.length }}
+
+{% endif %}

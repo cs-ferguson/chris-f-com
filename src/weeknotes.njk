@@ -1,0 +1,21 @@
+---
+pagination:
+  data: collections.weeknotes
+  size: 8
+  alias: weeknotes
+  reverse: true
+title: Weeknotes
+layout: layouts/base.njk
+templateClass: tmpl-archive
+permalink: /posts/weeknotes/{%if pagination.pageNumber > 0 %}{{ pagination.pageNumber | addOne }}/{% endif %}
+---
+
+<h1>Weeknotes</h1>
+<p class="introduction">A collection of notes gathering my thoughts and recapping the working week. The idea of <a href="https://weeknot.es/">weeknotes</a> are to offer self-reflection as a diary would, but also to specifically to make our practice open. Weeknotes are supposed to be work-related, but you'll not find much of that here...</p>
+<div class="postlist">
+{%- for post in weeknotes %}
+  {% include "postcard.njk" %}
+{%- endfor %}
+</div>
+
+{% include "pagecontrols.njk" %}

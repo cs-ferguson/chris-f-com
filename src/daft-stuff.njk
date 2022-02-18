@@ -1,0 +1,21 @@
+---
+pagination:
+  data: collections.daft-stuff
+  size: 8
+  alias: daftstuff
+  reverse: true
+title: Daft Stuff
+layout: layouts/base.njk
+templateClass: tmpl-archive
+permalink: /posts/daft-stuff/{%if pagination.pageNumber > 0 %}{{ pagination.pageNumber | addOne }}/{% endif %}
+---
+
+<h1>Daft Stuff I've Built</h1>
+<p class="introduction">Articles sharing some of the things I've built to solve problems, or keep myself entertained.</p>
+<div class="postlist">
+{%- for post in daftstuff %}
+  {% include "postcard.njk" %}
+{%- endfor %}
+</div>
+
+{% include "pagecontrols.njk" %}
