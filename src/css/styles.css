@@ -94,6 +94,11 @@ body > * > * {
   box-sizing: border-box;
 }
 
+a:focus, input:focus, select:focus, button:focus, textarea:focus {
+  outline: 2px solid var(--another-purple);
+  outline-offset: 3 px;
+}
+
 header .brand{
   padding: 0 var(--site-padding);
   font-family: var(--font-family-headers);
@@ -126,6 +131,9 @@ a{
 }
 a:visited{
   color: var(--link-visited);
+}
+a[aria-disabled="true"]{
+  color: var(--mid-gray);
 }
 
 h1, 
@@ -277,8 +285,24 @@ a.icon-link > svg{
   height: 1.5em;
 }
 
-a.icon-link > svg path{
+a.icon-link > svg path {
   fill: inherit
+}
+
+a.chip {
+  font-size: 0.8rem;
+  display: inline-block;
+  border: 1px solid var(--base-font-color);
+  text-decoration: none;
+  padding: 0.5em 1em;
+  height: 1.5em;
+  border-radius: 1.25em;
+  color: inherit;
+}
+
+a.chip:hover {
+  background: var(--base-font-color);
+  color: var(--base-bg-color);
 }
 
 .postlist + a {
@@ -286,7 +310,6 @@ a.icon-link > svg path{
   margin-top: 2em;
   display: inline-block;
 }
-
 
 /* breakpoints */
 @media (min-width: 960px) {

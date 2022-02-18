@@ -19,17 +19,21 @@
     <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
  
     <link href="/css/styles.css" rel="stylesheet" type="text/css">
-    <!--homepage stylesheet -->
+    {# homepage stylesheet #}
     {%if templateClass == "tmpl-home" %}
     <link href="/css/homepage.css" rel="stylesheet" type="text/css">
     {% endif %}
-    <!--404 stylesheet -->
+    {# 404 stylesheet #}
     {%if templateClass == "tmpl-404" %}
     <link href="/css/four-oh-four.css" rel="stylesheet" type="text/css">
     {% endif %}
-    <!--post stylesheet -->
+    {# post stylesheet  #}
     {%if tags and tags | checkIfPost %}
     <link href="/css/posts.css" rel="stylesheet" type="text/css">
+    {% endif %}
+    {# archive stylesheet #}
+    {%if templateClass == "tmpl-archive" %}
+    <link href="/css/archive.css" rel="stylesheet" type="text/css">
     {% endif %}
 
     {% include "schema.njk" %}

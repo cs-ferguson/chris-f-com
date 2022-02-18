@@ -6,7 +6,6 @@ dateModified: 2022-01-04
 tags:
   - featured
   - diary
-  - self
 layout: layouts/post.njk
 permalink: /posts/working-in-the-open/
 featuredImage: /img/secret-squirrel-480w.webp

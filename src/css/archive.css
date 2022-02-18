@@ -1,0 +1,17 @@
+nav[aria-label="Page Navigation"]{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  margin: 4em 0;
+  flex-wrap: wrap;
+  gap: 2em;
+}
+
+h1 + .chips {
+  margin-bottom: 2em;
+}
+
+.tmpl-archive .introduction {
+  font-style: italic;
+  margin-bottom: 2em;
+}

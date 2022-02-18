@@ -6,10 +6,19 @@ pagination:
   reverse: true
 title: Posts
 layout: layouts/base.njk
+templateClass: tmpl-archive
 permalink: /posts/{%if pagination.pageNumber > 0 %}{{ pagination.pageNumber | addOne }}/{% endif %}
 ---
 
 <h1>Posts</h1>
+<section class="chips">
+  <a href="/posts/weeknotes" class="chip">Weeknotes</a>
+  <a href="/posts/daft-stuff" class="chip">Daft Stuff</a>
+</section>
+<div class="postlist">
 {%- for post in posts %}
   {% include "postcard.njk" %}
 {%- endfor %}
+</div>
+
+{% include "pagecontrols.njk" %}
