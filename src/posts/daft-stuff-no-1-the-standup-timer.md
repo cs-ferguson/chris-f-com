@@ -70,6 +70,6 @@ Other notable features:
 - Keyboard operation to stop you fumbling for the mouse/trackpad mid-Stand-up
 - Video introductions
 
-You can find the repo here if you're interested, and try it out yourself at [standuptimer.chris-f.com](https://standuptimer.chris-f.com).
+You can find the repo [here](https://github.com/cs-ferguson/standuptimer) if you're interested, and try it out yourself at [standuptimer.chris-f.com](https://standuptimer.chris-f.com).
 
 Next up in this series: The Gmail Inbox Zero Chrome Extension.
