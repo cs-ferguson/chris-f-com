@@ -27,7 +27,7 @@ Symptoms include:
 
 The aforementioned reluctance manifests itself in a tendency to use DMs instead of shared Slack channels to communicate. I will tell myself that I make sure the _important_ messages are all in the shared channels, but the fact is, you never really know which messages are important - the most hum-drum messages can sometimes spark useful feedback or conversations you would never have imagined.
 
-> ...I have a lifelong fear of people believing I am inept/stupid...
+>! ...I have a lifelong fear of people believing I am inept/stupid...
 
 So why behave in such a manner? The wisdom of age (Sweet Lord it's 2022) allows you to be more open and honest about yourself, so here we go:
 
