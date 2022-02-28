@@ -15,7 +15,7 @@ I’m pretty happy with how my handover of QA has gone at Big Bite - I think the
 
 ## Thoughts
 
-> If your processes are tight, then you should be able to gauge progress asynchronously by looking at your PM software...
+>! If your processes are tight, then you should be able to gauge progress asynchronously by looking at your PM software...
 
 I randomly had the chance to collate my thoughts and observations on different styles of “stand-ups/catch-ups” as part of a discussion. I thought I’d include them here:
 
@@ -25,11 +25,13 @@ I randomly had the chance to collate my thoughts and observations on different s
 
 ## What I’ve learned this week
 
-> Using Loopback to add some light background Muzak always helps.
+>! Using Loopback to add some light background Muzak always helps.
 
-- I experimented with Loom, then went down a rabbit-hole and ended up learning how to use OBS. If I’m going to be a Product Manager I need to know how to create engaging demos!! Using Loopback to add some light background Muzak always helps.
-- Interesting Arch Daily article on Japanese architecture offices that basically open on to the street like shop fronts. I wonder if this is practical?
-- I (re)learned the origins of the term soap opera from this amusing excerpt from the Company:
+- I experimented with [Loom](https://www.loom.com/), then went down a rabbit-hole and ended up learning how to use [OBS](https://obsproject.com/). If I’m going to be a Product Manager I need to know how to create engaging demos!! Using [Loopback](https://rogueamoeba.com/loopback/) to add some light background Muzak always helps.
+- I read an interesting [Arch Daily article](https://www.archdaily.com/976895/down-to-earth-practice-how-some-japanese-architects-have-taken-their-offices-to-the-streets) on Japanese architecture offices that basically open on to the street like shop fronts. I wonder if this is practical?
+- I (re)learned the origins of the term soap opera from this amusing excerpt from [The Company](https://www.goodreads.com/en/book/show/210022.The_Company):
 
 
->> “Over at Procter & Gamble, the company also plowed a fortune into ever more professional marketing, inadvertently ruining modern culture by creating the soap opera...” - Credit here
+> “Over at Procter & Gamble, the company also plowed a fortune into ever more professional marketing, inadvertently ruining modern culture by creating the soap opera...” --- Mickelthwait and Wooldridge
+
+!["A picture of an Archtecture Office in Japan that opens directly onto the street at ground level."](https://images.adsttc.com/media/images/620d/231c/0af3/0537/e06f/9a2f/slideshow/r-urban-design-office-r-urban-design-office-c-kenya-chiba.jpg "Street-front office, Bukyo City, Japan. &copy; Kenya Chiba")

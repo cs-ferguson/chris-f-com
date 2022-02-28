@@ -3,10 +3,11 @@ const fs = require("fs");
 const path = require("path");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
-const { parseHTML } = require("linkedom");
+const {parseHTML} = require("linkedom");
 const markdownIt = require("markdown-it");
 const markdownItFigs = require("markdown-it-image-figures");
 const markdownItVideos = require("./src/utils/markdown-videos-plugin");
+const markdownItQuotes = require("./src/utils/markdown-quotes-plugin");
 
 // 11ty configuration
 module.exports = (config) => {
@@ -28,7 +29,7 @@ module.exports = (config) => {
     };
 
     if (outputPath && outputPath.endsWith(".html")) {
-      let { document } = parseHTML(content);
+      let {document} = parseHTML(content);
 
       let images = document.querySelectorAll("img");
 
@@ -98,6 +99,7 @@ module.exports = (config) => {
     .use(markdownItFigs, {
       figcaption: true,
     })
+    .use(markdownItQuotes, {})
     .use(markdownItVideos, {});
   config.setLibrary("md", markdownLibrary);
 
@@ -112,16 +114,16 @@ module.exports = (config) => {
         browserSync.addMiddleware("*", (req, res) => {
           if (req == "http://localhost:8081/sitemap.xml") {
             // Provides the sitemap content without redirect.
-            res.writeHead(200, { "Content-Type": "text/html; charset=UTF-8" });
+            res.writeHead(200, {"Content-Type": "text/html; charset=UTF-8"});
             res.write(contentSitemap);
             res.end();
           } else if (req == "http://localhost:8081/feed/feed.xml") {
             // Provides the feed file without redirect.
-            res.writeHead(200, { "Content-Type": "text/html; charset=UTF-8" });
+            res.writeHead(200, {"Content-Type": "text/html; charset=UTF-8"});
             res.write(contentFeed);
             res.end();
           } else {
-            res.writeHead(404, { "Content-Type": "text/html; charset=UTF-8" });
+            res.writeHead(404, {"Content-Type": "text/html; charset=UTF-8"});
             res.write(content404);
             res.end();
           }

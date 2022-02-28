@@ -17,11 +17,9 @@ A hypothesis we share as a team is that Engineers are put off by the prospect of
 
 *This is certainly not the case for our organisation - WordPress focussed as we are, we face some of the most engaging problems and challenges, and formulate some of the most interesting solutions I have seen in my time in the industry. 
 
-> We should engage in more formats that put our ideas out there on their own for criticism.
+>! We should engage in more formats that put our ideas out there on their own for criticism.
 
 Why do I always have my best ideas outside of group sessions? To be fair, I think everyone has their best ideas outside of group sessions - yet we persist with shouting at a white board and engaging in groupthink. I suppose it’s what everyone feels more comfortable doing.
-
-We should engage in more formats that put our ideas out there on their own for criticism.
 
 ## What I’ve learned this week
 
