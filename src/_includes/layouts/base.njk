@@ -41,7 +41,10 @@
   <body>
     {% include "analytics.njk" %}
     <header>
-      <div class="brand"><a href="{{ chrisf.rootUrl }}">Chris Ferguson</a></div>
+      <div class="brand">
+        <a href="{{ chrisf.rootUrl }}">Chris Ferguson</a>
+        <a class="tag-link" href="/posts/weeknotes">#weeknotes</a>
+      </div>
       {% if page.url != "/" %}
         {% include "breadcrumb.njk" %}
       {% endif %}
