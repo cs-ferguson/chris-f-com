@@ -12,7 +12,7 @@ featuredImage: /img/sut-screenshot-480w.webp
 ---
 I'm no Software Engineer. On a scale of "I'm still using Internet Explorer" to [King-HTML-Decoding-Hacker](https://heavy.com/news/gov-mike-parson-html-source-code-decoded-ssn/)  I sit just a bit after the Citizen Developer level. I know enough code just to get things working how I want, but not enough to build them properly.
 
-Aside: The future belongs to the Citizen Developers, I should write about that.
+_Aside_: The future belongs to the Citizen Developers, I should write about that.
 
 Now and again, I like to turn my attention to coding things that remove a bit of friction from my day-to-day, and I'll be covering this miscellany in this series.
 

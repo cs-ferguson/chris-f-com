@@ -8,6 +8,7 @@ const markdownIt = require("markdown-it");
 const markdownItFigs = require("markdown-it-image-figures");
 const markdownItVideos = require("./src/utils/markdown-videos-plugin");
 const markdownItQuotes = require("./src/utils/markdown-quotes-plugin");
+const markdownItNotes = require("./src/utils/markdown-notes-plugin");
 
 // 11ty configuration
 module.exports = (config) => {
@@ -100,6 +101,7 @@ module.exports = (config) => {
       figcaption: true,
     })
     .use(markdownItQuotes, {})
+    .use(markdownItNotes, {})
     .use(markdownItVideos, {});
   config.setLibrary("md", markdownLibrary);
 

@@ -65,7 +65,6 @@ module.exports = function quotesPlugin(md, options) {
           // check for pullquote content
           let tokenMatch = [...token.content.matchAll(pullquoteCheckRE)];
           if (tokenMatch.length > 0) {
-            console.log(state.tokens[lastBlockquoteIndex].attrPush);
             state.tokens[lastBlockquoteIndex].attrSet("class", "pullquote");
           }
           //check for citation

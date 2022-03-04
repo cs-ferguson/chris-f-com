@@ -22,7 +22,7 @@ One of my favourite analogies is the Doctor vs Waiter analogy that I heard via [
 
 Try to work out which relationship you want with your vendor before you send out your brief: If you are looking for a Doctor (someone whose expertise you trust) to deliver your project try to avoid a brief with hugely detailed requirements - instead focus on symptoms and problems. If you are looking for a Waiter, the onus is on you to ensure your requirements are already trimmed down to exaclty what you want (and ideally sufficiently detailed). You don't give the waiter a huge list of meals and expect them to spend 30 minutes working out which ones you actually want while the rest of the restaurant gives you dirty looks.
 
-_Note:_ That analogy never gets old.
+_Note_: That analogy never gets old.
 
 ## Benefits
 
