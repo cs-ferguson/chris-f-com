@@ -35,12 +35,12 @@ module.exports = (config) => {
 
   //image transform
   config.addTransform("transform", async (content, outputPath) => {
-    const options = {
-      widths: [300, 600, 900],
-      formats: ["webp", "jpeg"],
-      urlPath: "/img/",
-      outputDir: "./src/img/",
-    };
+    // const options = {
+    //   widths: [300, 600, 900],
+    //   formats: ["webp", "jpeg"],
+    //   urlPath: "/img/",
+    //   outputDir: "./src/img/",
+    // };
 
     if (outputPath && outputPath.endsWith(".html")) {
       let {document} = parseHTML(content);
@@ -58,7 +58,7 @@ module.exports = (config) => {
             widths: [240, 480, 640, 900, 1280],
             formats: ["webp", "jpg"],
             urlPath: "/img/",
-            outputDir: "./src/img/",
+            outputDir: "./build/img/",
             filenameFormat: function (id, src, width, format, options) {
               const extension = path.extname(src);
               const name = path.basename(src, extension);
@@ -99,7 +99,6 @@ module.exports = (config) => {
 
   // Copy the `img` and `css` folders to the output
   config.addPassthroughCopy("src/static");
-  config.addPassthroughCopy("src/img");
   config.addPassthroughCopy("src/css");
   config.addPassthroughCopy("src/video");
   config.addPassthroughCopy("src/fonts");
