@@ -60,6 +60,7 @@
   --breadcrumb-bg: var(--base-font-color);
   --breadcrumb-text: var(--base-bg-color);
   --link: var(--absolute-zero);
+  --link-hover: var(--another-purple);
   --link-visited: var(--violet-crayola);
 }
 
@@ -105,6 +106,8 @@ header .brand{
   background: var(--breadcrumb-bg);
   color: var(--breadcrumb-text);
   line-height: 1;
+  display: flex;
+  justify-content: space-between;
 }
 
 header .brand>a{
@@ -115,6 +118,14 @@ header .brand>a{
   color: inherit;
   padding: 2px 0;
   margin: 3px 0;
+}
+
+header .brand>a.tag-link{
+  font-family: var(--font-family-main);
+}
+
+header .brand>a.tag-link:hover{
+  color: var(--link-hover);
 }
 
 footer{

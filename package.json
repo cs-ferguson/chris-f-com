@@ -26,9 +26,11 @@
     "@11ty/eleventy": "^0.12.1",
     "@11ty/eleventy-img": "^1.0.0",
     "@11ty/eleventy-plugin-rss": "^1.1.2",
+    "canvas": "^2.9.0",
     "clean-css": "^5.2.2",
     "clean-css-cli": "^5.4.2",
     "dayjs": "^1.10.7",
+    "extract-colors": "^1.1.21",
     "linkedom": "^0.13.0",
     "markdown-it": "^12.2.0",
     "markdown-it-image-figures": "^2.0.0"

@@ -13,11 +13,11 @@ eleventyExcludeFromCollections: true
 	</author>
 	{% set absoluteUrl %}{{ metadata.feed.path | url | absoluteUrl(metadata.url) }}{% endset %}
 	<link href="{{ absoluteUrl }}" rel="self"/>
-	<webfeeds:cover image="{{ metadata.url }}/img/featured-image-default.jpg" />
-	<webfeeds:icon>{{ metadata.url }}/img/chris-f-favicon.svg</webfeeds:icon>
-	<webfeeds:logo>{{ metadata.url }}/img/chris-ferguson-full-text-icon.svg</webfeeds:logo>
-	<icon>{{ metadata.url }}/img/chris-f-favicon.svg</icon>
-	<logo>{{ metadata.url }}/img/chris-ferguson-full-text-icon.svg</logo>
+	<webfeeds:cover image="{{ metadata.url }}/static/featured-image-default.jpg" />
+	<webfeeds:icon>{{ metadata.url }}/static/chris-f-favicon.svg</webfeeds:icon>
+	<webfeeds:logo>{{ metadata.url }}/static/chris-ferguson-full-text-icon.svg</webfeeds:logo>
+	<icon>{{ metadata.url }}/static/chris-f-favicon.svg</icon>
+	<logo>{{ metadata.url }}/static/chris-ferguson-full-text-icon.svg</logo>
 	{%- for post in collections.posts | reverse %}
 	{% set absolutePostUrl %}{{ post.url | url | absoluteUrl(metadata.url) }}{% endset %}
 	<entry>

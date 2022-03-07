@@ -8,6 +8,20 @@ const markdownIt = require("markdown-it");
 const markdownItFigs = require("markdown-it-image-figures");
 const markdownItVideos = require("./src/utils/markdown-videos-plugin");
 const markdownItQuotes = require("./src/utils/markdown-quotes-plugin");
+const markdownItNotes = require("./src/utils/markdown-notes-plugin");
+const {extractColors} = require("extract-colors");
+
+const getImageColors = async (img) => {
+  return await extractColors(path.join(__dirname, "build/" + img)).then(
+    (colors) => {
+      let orderBySaturation = colors.sort(
+        (color1, color2) => color2.saturation - color1.saturation
+      );
+      let colorPalette = orderBySaturation.map((color) => color.hex);
+      return colorPalette;
+    }
+  );
+};
 
 // 11ty configuration
 module.exports = (config) => {
@@ -21,28 +35,30 @@ module.exports = (config) => {
 
   //image transform
   config.addTransform("transform", async (content, outputPath) => {
-    const options = {
-      widths: [300, 600, 900],
-      formats: ["webp", "jpeg"],
-      urlPath: "/img/",
-      outputDir: "./src/img/",
-    };
+    // const options = {
+    //   widths: [300, 600, 900],
+    //   formats: ["webp", "jpeg"],
+    //   urlPath: "/img/",
+    //   outputDir: "./src/img/",
+    // };
 
     if (outputPath && outputPath.endsWith(".html")) {
       let {document} = parseHTML(content);
 
       let images = document.querySelectorAll("img");
+      let imgCnt = 0;
 
       for (const image of images) {
+        imgCnt++;
         const src = image.getAttribute("src");
 
         //ignore gifs
         if (!src.match(/\.gif$/g)) {
           let metadata = await Image(src, {
             widths: [240, 480, 640, 900, 1280],
-            formats: ["webp"],
+            formats: ["webp", "jpg"],
             urlPath: "/img/",
-            outputDir: "./src/img/",
+            outputDir: "./build/img/",
             filenameFormat: function (id, src, width, format, options) {
               const extension = path.extname(src);
               const name = path.basename(src, extension);
@@ -58,8 +74,19 @@ module.exports = (config) => {
             "srcset",
             metadata.webp.map((p) => p.srcset)
           );
-          image.setAttribute("loading", "lazy");
-          image.setAttribute("decoding", "async");
+          // don't set lazy/async on first image
+          if (imgCnt > 1) {
+            image.setAttribute("loading", "lazy");
+            image.setAttribute("decoding", "async");
+          }
+          //get dominant color
+          let dominantColor = "#909090";
+
+          dominantColors = await getImageColors(metadata.jpeg[0].url);
+
+          console.log(metadata.jpeg[0].url, dominantColors);
+
+          image.setAttribute("style", `--dominant-color: ${dominantColors[0]}`);
         }
       }
 
@@ -71,7 +98,7 @@ module.exports = (config) => {
   config.setDataDeepMerge(true);
 
   // Copy the `img` and `css` folders to the output
-  config.addPassthroughCopy("src/img");
+  config.addPassthroughCopy("src/static");
   config.addPassthroughCopy("src/css");
   config.addPassthroughCopy("src/video");
   config.addPassthroughCopy("src/fonts");
@@ -98,8 +125,10 @@ module.exports = (config) => {
   })
     .use(markdownItFigs, {
       figcaption: true,
+      copyAttrs: "style",
     })
     .use(markdownItQuotes, {})
+    .use(markdownItNotes, {})
     .use(markdownItVideos, {});
   config.setLibrary("md", markdownLibrary);
 

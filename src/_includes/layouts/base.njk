@@ -12,11 +12,11 @@
     {%if featuredImage %}
     <meta property="og:image" content="{{ chrisf.rootUrl }}{{ featuredImage }}" />
     {% else %}
-    <meta property="og:image" content="{{ chrisf.rootUrl }}/img/featured-image-default.webp" />
+    <meta property="og:image" content="{{ chrisf.rootUrl }}/static/featured-image-default.webp" />
     {% endif %}
     <meta property="og:site_name" content="Chris Ferguson's Weblog" />
     <meta property="og:type" content="article" />
-    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/static/favicon-32x32.png">
  
     <link href="/css/styles.css" rel="stylesheet" type="text/css">
     {# homepage stylesheet #}
@@ -41,7 +41,10 @@
   <body>
     {% include "analytics.njk" %}
     <header>
-      <div class="brand"><a href="{{ chrisf.rootUrl }}">Chris Ferguson</a></div>
+      <div class="brand">
+        <a href="{{ chrisf.rootUrl }}">Chris Ferguson</a>
+        <a class="tag-link" href="/posts/weeknotes">#weeknotes</a>
+      </div>
       {% if page.url != "/" %}
         {% include "breadcrumb.njk" %}
       {% endif %}
