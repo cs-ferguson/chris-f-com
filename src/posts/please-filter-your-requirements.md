@@ -8,6 +8,7 @@ tags:
   - delivery
 layout: layouts/post.njk
 permalink: /posts/please-filter-your-requirements/
+featuredImage: /img/requirements-480w.webp
 ---
 
 !["A person holding a list of requirements so long that it trails along the floor."](https://cfergo.s3.eu-west-1.amazonaws.com/requirements.jpeg)
