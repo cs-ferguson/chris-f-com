@@ -13,7 +13,7 @@ featuredImage: /img/requirements-480w.webp
 
 !["A person holding a list of requirements so long that it trails along the floor."](https://cfergo.s3.eu-west-1.amazonaws.com/requirements.jpeg)
 
-When you work in an agency sometimes you receive a set of requirements with line items in there that are just obviously never going to be built (something even more obvious after you get wind of the budget). There will often be one or two lines in there where the costs so massively outweigh the benefits that there seems no reason to put them in there. So when you're putting together your next RFQ, before you go adding a requirement for that all-singing-all-dancing .xlsx upload parser, or that integrated, automated translation tool that doesn't require any proof reading; consider if you really need it in the _initial_ version of your product.
+Sometimes you receive a set of requirements with line items in there that are just obviously never going to be built (something even more obvious after you get wind of the budget). There will often be one or two lines in there where the costs so massively outweigh the benefits that there seems no reason to put them in there. So when you're putting together your next RFQ, before you go adding a requirement for that all-singing-all-dancing .xlsx upload parser, or that integrated, automated translation tool that doesn't require any proof reading; consider if you really need it in the _initial_ version of your product.
 
 These kinds of requirements get sent out for a lot of reasons; appeasement or power relations are a couple of good ones, but often it is the amount of time required to sit down with your team and go through all of the requirements you've gathered from your stakeholders and start trimming them. 
 
