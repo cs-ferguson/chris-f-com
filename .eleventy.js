@@ -12,7 +12,7 @@ const markdownItNotes = require("./src/utils/markdown-notes-plugin");
 const {extractColors} = require("extract-colors");
 
 const getImageColors = async (img) => {
-  return await extractColors(path.join(__dirname, "src/" + img)).then(
+  return await extractColors(path.join(__dirname, "build/" + img)).then(
     (colors) => {
       let orderBySaturation = colors.sort(
         (color1, color2) => color2.saturation - color1.saturation
