@@ -85,6 +85,9 @@ module.exports = (config) => {
       let videos = document.querySelectorAll("source");
       for (const video of videos) {
         console.log(video.src);
+        if (!fs.existsSync(`./build/video`)) {
+          fs.mkdirSync(`./build/video`, {recursive: true});
+        }
         const file = fs.createWriteStream(`./build${video.src}`);
         const request = http.get(
           `http://cfergo.s3.eu-west-1.amazonaws.com${video.src}`,
