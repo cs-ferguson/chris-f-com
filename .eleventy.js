@@ -1,5 +1,6 @@
 const dayjs = require("dayjs");
 const fs = require("fs");
+const http = require("http");
 const path = require("path");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
@@ -35,13 +36,6 @@ module.exports = (config) => {
 
   //image transform
   config.addTransform("transform", async (content, outputPath) => {
-    // const options = {
-    //   widths: [300, 600, 900],
-    //   formats: ["webp", "jpeg"],
-    //   urlPath: "/img/",
-    //   outputDir: "./src/img/",
-    // };
-
     if (outputPath && outputPath.endsWith(".html")) {
       let {document} = parseHTML(content);
 
@@ -84,10 +78,20 @@ module.exports = (config) => {
 
           dominantColors = await getImageColors(metadata.jpeg[0].url);
 
-          console.log(metadata.jpeg[0].url, dominantColors);
-
           image.setAttribute("style", `--dominant-color: ${dominantColors[0]}`);
         }
+      }
+
+      let videos = document.querySelectorAll("source");
+      for (const video of videos) {
+        console.log(video.src);
+        const file = fs.createWriteStream(`./build${video.src}`);
+        const request = http.get(
+          `http://cfergo.s3.eu-west-1.amazonaws.com${video.src}`,
+          function (response) {
+            response.pipe(file);
+          }
+        );
       }
 
       return `<!DOCTYPE html>${document.documentElement.outerHTML}`;
@@ -100,7 +104,6 @@ module.exports = (config) => {
   // Copy the `img` and `css` folders to the output
   config.addPassthroughCopy("src/static");
   config.addPassthroughCopy("src/css");
-  config.addPassthroughCopy("src/video");
   config.addPassthroughCopy("src/fonts");
   config.addPassthroughCopy("_redirects");
 
