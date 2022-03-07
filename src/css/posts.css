@@ -40,12 +40,7 @@ main.tmpl-post time + figure {
 }
 
 main.tmpl-post time + figure > img {
-  max-width: calc( var(--article-width) + 4em);
-  margin: auto;
-  border-width: 0 2px;
-  border-style: solid;
-  border-color: var(--base-font-color);
-  box-shadow: 6px 0px var(--dominant-color), -6px 0px var(--dominant-color);
+  max-width: 100%;
 }
 
 main.tmpl-post video{
@@ -71,4 +66,20 @@ nav[aria-label="Post Navigation"]{
     margin: 2em 2em 2em 1em;
     padding: 0 1.4em;
   }
+
+  main.tmpl-post time + figure {
+    margin-left: calc(50% - 50vw);
+    margin-right: calc(50% - 50vw);
+    width: 100vw;
+  }
+  
+  main.tmpl-post time + figure > img {
+    max-width: calc( var(--article-width) + 4em);
+    border-width: 0 2px;
+    border-style: solid;
+    border-color: var(--base-font-color);
+    box-shadow: 6px 0px var(--dominant-color), -6px 0px var(--dominant-color);
+  }
+
+
 }
