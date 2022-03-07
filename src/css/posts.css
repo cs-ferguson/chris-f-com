@@ -30,6 +30,19 @@ main.tmpl-post img {
   margin: auto;
 }
 
+main.tmpl-post time + figure {
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+  width: 100vw;
+  border-bottom: 1px solid #000;
+}
+
+main.tmpl-post time + figure > img {
+  max-width: var(--article-width);
+  margin: auto;
+  /* box-shadow: 1em 1em 0 0 var(--dominant-color); */
+}
+
 main.tmpl-post video{
   width: 100%;
   max-width: 100%;
