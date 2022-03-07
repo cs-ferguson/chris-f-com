@@ -70,7 +70,6 @@ nav[aria-label="Post Navigation"]{
   main.tmpl-post time + figure {
     margin-left: calc(50% - 50vw);
     margin-right: calc(50% - 50vw);
-    width: 100vw;
   }
   
   main.tmpl-post time + figure > img {
