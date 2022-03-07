@@ -86,7 +86,7 @@ module.exports = (config) => {
 
           console.log(metadata.jpeg[0].url, dominantColors);
 
-          image.setAttribute("style", `--dominant-color: ${dominantColor[0]}`);
+          image.setAttribute("style", `--dominant-color: ${dominantColors[0]}`);
         }
       }
 
@@ -98,6 +98,7 @@ module.exports = (config) => {
   config.setDataDeepMerge(true);
 
   // Copy the `img` and `css` folders to the output
+  config.addPassthroughCopy("src/static");
   config.addPassthroughCopy("src/img");
   config.addPassthroughCopy("src/css");
   config.addPassthroughCopy("src/video");

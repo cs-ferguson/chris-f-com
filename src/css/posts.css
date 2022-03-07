@@ -38,9 +38,9 @@ main.tmpl-post time + figure {
 }
 
 main.tmpl-post time + figure > img {
-  max-width: var(--article-width);
+  max-width: calc( var(--article-width) + 4em);
   margin: auto;
-  /* box-shadow: 1em 1em 0 0 var(--dominant-color); */
+  /* box-shadow: 0.5em 0.5em 0 0 var(--dominant-color); */
 }
 
 main.tmpl-post video{
