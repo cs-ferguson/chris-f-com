@@ -34,13 +34,18 @@ main.tmpl-post time + figure {
   margin-left: calc(50% - 50vw);
   margin-right: calc(50% - 50vw);
   width: 100vw;
-  border-bottom: 1px solid #000;
+  border-width: 2px 0;
+  border-style: solid;
+  border-color: var(--base-font-color);
 }
 
 main.tmpl-post time + figure > img {
   max-width: calc( var(--article-width) + 4em);
   margin: auto;
-  /* box-shadow: 0.5em 0.5em 0 0 var(--dominant-color); */
+  border-width: 0 2px;
+  border-style: solid;
+  border-color: var(--base-font-color);
+  box-shadow: 6px 0px var(--dominant-color), -6px 0px var(--dominant-color);
 }
 
 main.tmpl-post video{
