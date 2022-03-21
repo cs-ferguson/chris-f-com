@@ -1,6 +1,6 @@
 ---
 title: "Weeknotes: 2022, Week 11"
-description: "My weeknotes for 2022, Week 11. Presentations in the remote world. And "Wood Tubes""
+description: "My weeknotes for 2022, Week 11. Presentations in the remote world. And Wood Tubes."
 date: 2022-03-21
 dateModified: 2022-03-21
 tags:
