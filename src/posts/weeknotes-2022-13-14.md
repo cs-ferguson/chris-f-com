@@ -1,6 +1,6 @@
 ---
 title: "Weeknotes: 2022, Week 13 and 14"
-description: "My weeknotes for 2022, Week 13 and 14. "
+description: "My weeknotes for 2022, Week 13 and 14. Flooring, starting a new job and looots of driving. Also, first ever visit to the Birmingham NEC"
 date: 2022-04-11
 dateModified: 2022-04-11
 tags:
