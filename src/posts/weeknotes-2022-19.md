@@ -30,6 +30,7 @@ There were some good talks and workshops at Techfest, but I particularly enjoyed
 Too often I've seen teams go straight to the nitty-gritty of frameworks, without understanding hhigher-level how they are achieving the aims of Agile. These three questions really help strip it back and explain the why.
 
 Anyway, this led me to discover the term "Post Agile" - it seems to have been around for a couple of years now, but I'm slow on the uptake! It's hard to tell, but on the face of it, Post-Agilism seems to be the acceptance that Agile had some good points, but has failed to lead us all to a promised project utopia. This is a natural backlash to anythign that attracts zealous devotion of any scale.
+
 ## What do I want to achieve next week?
 
 I want to look further into implementing agility into Hardware projects: how can we get to a stage where we can _rapidly_ complete iterations of a hardware project and test them. Does it require a massive investment in manufactuirng process and methods? Software is easy!
