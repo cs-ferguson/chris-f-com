@@ -33,6 +33,6 @@ Anyway, this led me to discover the term "Post Agile" - it seems to have been ar
 
 ## What do I want to achieve next week?
 
-I want to look further into implementing agility into Hardware projects: how can we get to a stage where we can _rapidly_ complete iterations of a hardware project and test them. Does it require a massive investment in manufactuirng process and methods? Software is easy!
+I want to look further into implementing agility into Hardware projects: how can we get to a stage where we can _rapidly_ complete iterations of a hardware project and test them. Does it require a massive investment in manufacturing process and methods? Software is easy!
 
 I also need to get my newly develop Business Model Canvasses collated into a digestable story.
