@@ -9,6 +9,8 @@ layout: layouts/post.njk
 permalink: /posts/weeknotes-2022-19/
 ---
 
+!["Delicious giant pretzels hanging on racks on the buffet table."](https://cfergo.s3.eu-west-1.amazonaws.com/pretzel-heaven.jpeg "Pretzel heaven.")
+
 I'm a little disappointed in my ability to keep up with the Weeknotes at the minute. It's a combination of them taking longer to write due to the amount of things I am learning in the new role, the amount of analysis required as a result, and having little time to write them too due to all of my spare time being taken up by Kitchen fitting and tiling.
 
 Anyway, this is a good week to write them.
@@ -19,6 +21,8 @@ I was in New York at BP Launchpad's Techfest event. It was fantastic not only to
 
 I got a couple of great runs in as well by the Hudson.
 
+!["A photo from the highline looking along a Manhattan Street."](https://cfergo.s3.eu-west-1.amazonaws.com/highline.jpeg "Photo from my morning run along the Highline.")
+
 ## Post Agile > Post Hardcore > Post Modernism
 
 There were some good talks and workshops at Techfest, but I particularly enjoyed Dave Huntley's talk about Agile that concisely gathered a lot of my thoughts about Agile, and armed me with some new ways of explaining the important things about it to people. He condensed it down to three questions:
@@ -27,9 +31,9 @@ There were some good talks and workshops at Techfest, but I particularly enjoyed
 - Are we building the thing right?
 - Are we building it fast enough?
 
-Too often I've seen teams go straight to the nitty-gritty of frameworks, without understanding hhigher-level how they are achieving the aims of Agile. These three questions really help strip it back and explain the why.
+Too often I've seen teams go straight to the nitty-gritty of frameworks, without understanding higher-level how they are achieving the aims of Agile. These three questions really help strip it back and explain the why.
 
-Anyway, this led me to discover the term "Post Agile" - it seems to have been around for a couple of years now, but I'm slow on the uptake! It's hard to tell, but on the face of it, Post-Agilism seems to be the acceptance that Agile had some good points, but has failed to lead us all to a promised project utopia. This is a natural backlash to anythign that attracts zealous devotion of any scale.
+Anyway, this led me to discover the term "Post Agile" - it seems to have been around for a couple of years now, but I'm slow on the uptake! It's hard to tell, but on the face of it, Post-Agilism seems to be the acceptance that Agile had some good points, but has failed to lead us all to a promised project utopia. This is a natural backlash to anything that attracts zealous devotion of any scale.
 
 ## What do I want to achieve next week?
 
