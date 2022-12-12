@@ -4,6 +4,7 @@ const http = require("http");
 const path = require("path");
 const Image = require("@11ty/eleventy-img");
 const pluginRss = require("@11ty/eleventy-plugin-rss");
+const embedTwitter = require("eleventy-plugin-embed-twitter");
 const {parseHTML} = require("linkedom");
 const markdownIt = require("markdown-it");
 const markdownItFigs = require("markdown-it-image-figures");
@@ -28,6 +29,7 @@ const getImageColors = async (img) => {
 module.exports = (config) => {
   //plugins
   config.addPlugin(pluginRss);
+  config.addPlugin(embedTwitter);
 
   //modify ignores - available in v1.0!!
   // if (process.env.ELEVENTY_ENV == "production") {

@@ -34,5 +34,8 @@
     "linkedom": "^0.13.0",
     "markdown-it": "^12.2.0",
     "markdown-it-image-figures": "^2.0.0"
+  },
+  "dependencies": {
+    "eleventy-plugin-embed-twitter": "^1.3.4"
   }
 }
