@@ -13,7 +13,11 @@ Short week last week due to two days off, so combining week 50 and 51.
 
 ## What did I learn this week?
 
-I was excited to be able to try out [Notion's new AI](https://www.notion.so/product/ai) authoring features, and tried it to generate some content for a blog post I'm planning on fiber optic sensing. The results were interesting - there's a bit of a dearth of info on FO sensing aorund the net, and this obviously caused problems. For topics that are well documented online however, it looks to be an awesome tool.
+I was excited to be able to try out [Notion's new AI](https://www.notion.so/product/ai) authoring features, and tried it to generate some content for a blog post I'm planning on fiber optic sensing. The results were interesting - there's a bit of a dearth of info on FO sensing aorund the net, and this obviously caused problems. For topics that are well documented online however, it looks to be an awesome tool. I also tried to write a LinkedIn profile summary - the tone wasn't quite "me" – here are the results:
+
+> "Nothing ever makes sense until it's too late," or so the old saying goes. I'm here to prove it wrong. As a product manager with experience in IT management, graphic design, project management, and software and website development, I'm determined to help organizations make sense of the complex and ever-changing digital world. With a unique blend of skills and a passion for problem-solving, I'm eager to help businesses make informed decisions and create meaningful products. Let's work together and make sense of the world!
+
+Not bad!
 
 ## What do I need to take care of?
 
