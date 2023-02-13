@@ -1,6 +1,6 @@
 ---
 title: "Weeknotes: 2023, Week 2"
-description: "My weeknotes for 2023, Week 2. Happy New Year."
+description: "My weeknotes for 2023, Week 2. Did you know Nike owns Converse?"
 date: 2023-01-13
 dateModified: 2023-01-13
 tags:
