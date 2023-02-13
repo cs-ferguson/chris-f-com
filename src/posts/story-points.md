@@ -11,7 +11,7 @@ layout: layouts/post.njk
 permalink: /posts/story-points-the-final-chapter/
 ---
 
-I've helped a lot of teams over the years try to get a handle on the concept of estimating using story points, and I've begun very good at epxlaining away the apparent arbitrariness that they are infused with. And whilst I can't always remove that skepticism, I can get teams to see their value.
+I've helped a lot of teams over the years try to get a handle on the concept of estimating using story points, and I've gotten very good at epxlaining away the apparent arbitrariness that they are infused with. And whilst I can't always remove that skepticism, I can get teams to see their value.
 
 Coming from a waterfall delivery origin, and having witness countless short-lived Gantt charts due to a reluctance to accept the unpredictable nature of the universe, the concept of estimating with story points resonated with me immediately. But that was a long time ago, and now being older and slightly more wizened, I have a question:
 
