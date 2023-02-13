@@ -11,11 +11,11 @@ permalink: /posts/weeknotes-2023-02/
 
 ## What did I learn this week?
 
-This week I learned that Nike owns Converse. Not life-changing, but always interesting finding more out about the tangled web of the commercial world. 
+This week I learned that Nike owns Converse. Not life-changing, but it's always interesting finding out more about the tangled web of the commercial world. 
 
 ## What was challenging?
 
-I held a project kick-off this week for the first time in 2 years. It was challenging co-ordinating so many different disciplines - coming from software/web, everyone spoke almost the same language. On reflection though, it was like putting on a comfortable pair of old slippers. My slippers though. Someone else's old slippers would not be a comfortable experience. 
+I held a project kick-off this week for the first time in 2 years. It was challenging coordinating so many different disciplines - coming from software/web, everyone spoke almost the same language. On reflection though, it was like putting on a comfortable pair of old slippers. My slippers though. Someone else's old slippers would not be a comfortable experience. 
 
 ## What do I need to take care of?
 
@@ -23,4 +23,4 @@ Next up it's getting back to Epic and Story-writing - my first chance real chanc
 
 ## Self...
 
-The coffee shop didn't give me decaf for my second coffee - the resulting buzz sent my resting heart rate soaring to 57bpm.
+The coffee shop didn't give me decaf for my second coffee - the resulting buzz sent my resting heart rate soaring to 57b.p.m.
