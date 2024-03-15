@@ -1,0 +1,21 @@
+---
+pagination:
+  data: collections.portfolio
+  size: 8
+  alias: portfolio
+  reverse: true
+title: Portfolio
+layout: layouts/base.njk
+templateClass: tmpl-archive
+permalink: /posts/portfolio/{%if pagination.pageNumber > 0 %}{{ pagination.pageNumber | addOne }}/{% endif %}
+---
+
+<h1>Portfolio</h1>
+<p class="introduction">Stuff I've built for professional impact, or otherwise</p>
+<div class="postlist">
+{%- for post in portfolio %}
+  {% include "postcard.njk" %}
+{%- endfor %}
+</div>
+
+{% include "pagecontrols.njk" %}
