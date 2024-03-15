@@ -4,7 +4,6 @@ description: "Once upon a time, Story Points made perfect sense - now I'm not so
 date: 2023-01-31
 dateModified: 2023-01-31
 tags:
-  - featured
   - delivery
   - agile
 layout: layouts/post.njk
